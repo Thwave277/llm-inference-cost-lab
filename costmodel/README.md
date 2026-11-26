@@ -14,7 +14,7 @@ LLM 推理算力成本模型。给定模型规模和硬件，算出**每生成�
 ## 快速开始
 
 ```bash
-cd D:\deepseek\llm-cost-lab\costmodel
+cd costmodel
 costmodel.cmd                     # 默认：Qwen3-1.7B + 本机 5060
 costmodel.cmd --model llama3-70b
 costmodel.cmd --model deepseek-v3 --wbits 8 --ctx 32768

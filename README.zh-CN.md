@@ -96,7 +96,7 @@ python power_probe.py --model <路径>                  # 功耗
 python spec_probe.py --model <路径> --method ngram     # 投机解码
 ```
 
-远端（AutoDL）的 SSH 配置在 `D:\deepseek\ssh\config`，别名 `autodl`。
+远端（AutoDL）的 SSH 配置写成本地 `~/.ssh/config` 的 Host 块，别名 `autodl`，可直接 `ssh autodl`。
 
 ---
 

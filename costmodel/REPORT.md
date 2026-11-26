@@ -188,7 +188,7 @@ ms/token    = t_step / (batch × (1 + α·k))
 | 项 | 值 |
 |---|---|
 | GPU | RTX 5060 Laptop，8 GB，标称带宽 448 GB/s |
-| 推理引擎 | Ollama 0.40.16（本体在 C 盘，模型在 `D:\ollama\models`） |
+| 推理引擎 | Ollama 0.40.16（模型目录指向非系统盘） |
 | 模型来源 | ModelScope GGUF 直下 + `ollama create` 导入（绕开 155 KB/s 的官方 registry） |
 | 测量口径 | `eval_duration / eval_count`，warmup 后 5 次取中位数 |
 

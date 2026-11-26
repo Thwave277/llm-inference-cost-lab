@@ -40,7 +40,7 @@ ms_per_token = step_ms / batch
 
 ## 成本模型
 
-与 `D:\deepseek\llm-cost-lab\costmodel\costmodel.mjs` 同一套公式：
+与 `costmodel/costmodel.mjs` 同一套公式：
 
 ```
 bytes = 激活参数 × bits/8 + batch × (ctx + k) × 每 token KV 字节

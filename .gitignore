@@ -3,8 +3,8 @@ __pycache__/
 *.py[cod]
 .venv/
 
-# 分发件（走 release，不进仓库）
-*.zip
+# 分发件：整包 zip 是唯一入仓库的二进制（Releases 上传走 uploads.github.com，本机不稳）
+!llm-cost-lab-v1.9.zip
 
 # Office 临时文件
 ~$*.docx

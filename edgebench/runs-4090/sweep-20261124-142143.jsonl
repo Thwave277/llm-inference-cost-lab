@@ -1,0 +1,1 @@
+{"engine": "vllm", "model": "/root/autodl-tmp/models/Qwen3-4B", "batch": 1, "ok": true, "max_tokens": 128, "wall_long_s": 2.628, "wall_short_s": 0.866, "step_ms": 14.6861, "ms_per_token": 14.6861, "tok_s": 68.1, "ttft_proxy_s": 0.866, "kv_dtype": "fp8", "dtype": "auto", "load_s": 32.6}

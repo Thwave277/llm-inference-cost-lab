@@ -1,0 +1,2 @@
+{"engine": "vllm", "model": "/root/autodl-tmp/models/Qwen3-4B", "batch": 1, "ok": true, "max_tokens": 128, "wall_long_s": 1.327, "wall_short_s": 0.094, "step_ms": 10.2762, "ms_per_token": 10.2762, "tok_s": 97.3, "ttft_proxy_s": 0.094, "kv_dtype": "auto", "dtype": "auto", "load_s": 65.4}
+{"engine": "vllm", "model": "/root/autodl-tmp/models/Qwen3-4B", "batch": 4, "ok": true, "max_tokens": 128, "wall_long_s": 1.421, "wall_short_s": 0.104, "step_ms": 10.975, "ms_per_token": 2.7437, "tok_s": 364.5, "ttft_proxy_s": 0.104, "kv_dtype": "auto", "dtype": "auto", "load_s": 65.4}

@@ -1,0 +1,32 @@
+{
+  "model": "/root/autodl-tmp/models/Qwen3-30B-A3B-GPTQ-Int4",
+  "rows": [
+    {
+      "batch": 1,
+      "tok_s": 27.3,
+      "calls_total": 3072,
+      "steps_sampled": 3024,
+      "union_frac": 0.0625,
+      "experts_per_layer": 8.0,
+      "top_1_8_share": 0.2109
+    },
+    {
+      "batch": 8,
+      "tok_s": 203.2,
+      "calls_total": 3072,
+      "steps_sampled": 3024,
+      "union_frac": 0.3439,
+      "experts_per_layer": 44.0,
+      "top_1_8_share": 0.179
+    },
+    {
+      "batch": 32,
+      "tok_s": 797.6,
+      "calls_total": 3072,
+      "steps_sampled": 3024,
+      "union_frac": 0.4288,
+      "experts_per_layer": 54.9,
+      "top_1_8_share": 0.1758
+    }
+  ]
+}

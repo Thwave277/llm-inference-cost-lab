@@ -1,0 +1,19 @@
+# 实测环境（Linux + NVIDIA），本报告所有 4090 数字都锁在这套版本上
+# 安装：pip install -r requirements.txt
+# 注意：vllm 会自动带 torch，单独钉 torch 版本时保持同一 CUDA wheel 前缀（cu128）
+
+vllm==0.10.2
+transformers==4.55.4      # 关键：5.x 与 vllm 0.10.2 不兼容（Qwen2Tokenizer.all_special_tokens_extended 缺失）
+torch==2.8.0+cu128
+numpy>=1.26
+pyarrow>=15.0            # 读 wikitext parquet（`ppl_probe.py` 的语料预处理）
+modelscope>=1.20         # 模型/数据集下载走国内源
+llama-cpp-python==0.3.38 # 只为拿它 vendor 的 llama.cpp 源码树来编译 llama-bench（自带 CUDA 构建）
+
+# ---- 不在 pip 里、必须单独处理的两项 ----
+# CUDA Toolkit 11.8（/usr/local/cuda），llama.cpp 用它编译；编译参数见 REPRODUCE.md 第 4 步
+# Ollama 0.40.16 —— 只用于笔记本侧（Windows）的 prefill/校准，不在 GPU 机里
+
+# ---- 版本锁定说明 ----
+# 换 vLLM / transformers / torch 任一项，都必须重跑 `node ../costmodel/calibrate.mjs`，
+# 不要拿报告里的 801 GB/s、26.7× 直接外推：这些数绑定在 vLLM 0.10.2 的调度器实现上。

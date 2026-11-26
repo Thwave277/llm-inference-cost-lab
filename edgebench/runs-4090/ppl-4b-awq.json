@@ -1,0 +1,95 @@
+{
+  "model": "/root/autodl-tmp/models/Qwen3-4B-AWQ",
+  "load_s": 32.7,
+  "ppl": 17.0816,
+  "ppl_tokens": 32736,
+  "ppl_chunks": 32,
+  "ppl_per_chunk": [
+    11.0633,
+    23.2335,
+    19.7217,
+    22.4276,
+    28.8671,
+    19.1432,
+    24.1074,
+    23.7255
+  ],
+  "tasks_total": 34,
+  "tasks_ok": 9,
+  "task_acc": 0.2647,
+  "task_s": 0.5,
+  "task_fails": [
+    {
+      "kind": "math",
+      "q": "Answer with the number only: 17 * 23 =",
+      "expect": "391",
+      "got": "?"
+    },
+    {
+      "kind": "math",
+      "q": "Answer with the number only: 48 * 37 =",
+      "expect": "1776",
+      "got": "?"
+    },
+    {
+      "kind": "math",
+      "q": "Answer with the number only: 96 * 12 =",
+      "expect": "1152",
+      "got": "?"
+    },
+    {
+      "kind": "math",
+      "q": "Answer with the number only: 123 * 45 =",
+      "expect": "5535",
+      "got": "?"
+    },
+    {
+      "kind": "math",
+      "q": "Answer with the number only: 7 * 89 =",
+      "expect": "623",
+      "got": "?"
+    },
+    {
+      "kind": "math",
+      "q": "Answer with the number only: 256 * 4 =",
+      "expect": "1024",
+      "got": "?"
+    },
+    {
+      "kind": "math",
+      "q": "Answer with the number only: 63 * 64 =",
+      "expect": "4032",
+      "got": "?"
+    },
+    {
+      "kind": "math",
+      "q": "Answer with the number only: 1000 * 3 =",
+      "expect": "3000",
+      "got": "?"
+    },
+    {
+      "kind": "math",
+      "q": "Answer with the number only: 19 * 19 =",
+      "expect": "361",
+      "got": "?"
+    },
+    {
+      "kind": "math",
+      "q": "Answer with the number only: 72 * 25 =",
+      "expect": "1800",
+      "got": "?"
+    },
+    {
+      "kind": "math",
+      "q": "Answer with the number only: 144 * 12 =",
+      "expect": "1728",
+      "got": "?"
+    },
+    {
+      "kind": "math",
+      "q": "Answer with the number only: 55 * 55 =",
+      "expect": "3025",
+      "got": "?"
+    }
+  ]
+}

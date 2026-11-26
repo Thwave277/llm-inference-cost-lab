@@ -1,0 +1,37 @@
+{
+  "name": "quick",
+  "desc": "租用机器上的冒烟：先证明工具链通，再谈收益。全程 <= 40 分钟 GPU 时间。",
+  "steps": [
+    {
+      "id": "env",
+      "cmd": "python -m edgebench env --out runs/env.json",
+      "why": "记下卡型、显存、驱动、PCIe 代际；没有这份快照的数字都不算数"
+    },
+    {
+      "id": "pull",
+      "cmd": "python -m edgebench pull Qwen/Qwen3-4B --dest models/Qwen3-4B",
+      "why": "先把权重落盘，后面全用本地路径；否则每个 batch 点都可能重新联网校验，既慢又不可控"
+    },
+    {
+      "id": "predict",
+      "cmd": "python -m edgebench predict --model qwen3-4b --bw 320 --t0 1.5",
+      "why": "用本机校准过的参数先看理论值；换卡后 bw 要用 fit 重解"
+    },
+    {
+      "id": "sweep",
+      "cmd": "python -m edgebench sweep --model models/Qwen3-4B --batches 1,4,8,16 --max-tokens 256",
+      "why": "第一张曲线：batch 与吞吐，找拐点"
+    },
+    {
+      "id": "kv",
+      "cmd": "python -m edgebench sweep --model models/Qwen3-4B --batches 1 --kv-dtype fp8 --max-tokens 256",
+      "why": "第二张曲线：KV 量化在同 batch 下的收益"
+    }
+  ],
+  "accept": [
+    "runs/env.json 存在且 gpu.available=true",
+    "sweep 的 jsonl 里每个 batch 点都有 step_ms 与 tok_s",
+    "batch 从 1 加到 8 时 tok/s 至少涨 2 倍"
+  ],
+  "caveat": "第 3 条不是绝对的。若 tok_s 涨幅不足 2 倍，先看 step_ms 的涨幅：step_ms 也涨了 3 倍以上，说明受限于显存/KV 容量（每个 batch 点的 KV 都要占显存），不是引擎没开 batching。区分方法：把 --max-len 调小到 2048 重跑，涨幅恢复即是容量问题，应记为 WARN 而不是 FAIL。"
+}

@@ -1,0 +1,30 @@
+{
+  "model": "olmoe-1b-7b",
+  "rows": [
+    {
+      "target": 128,
+      "prompt_tokens": 134,
+      "prefill_tok_s": 4115.7
+    },
+    {
+      "target": 512,
+      "prompt_tokens": 472,
+      "prefill_tok_s": 7701.9
+    },
+    {
+      "target": 1024,
+      "prompt_tokens": 920,
+      "prefill_tok_s": 7702
+    },
+    {
+      "target": 2048,
+      "prompt_tokens": 1818,
+      "prefill_tok_s": 7460.5
+    },
+    {
+      "target": 4096,
+      "prompt_tokens": 3613,
+      "prefill_tok_s": 6953
+    }
+  ]
+}

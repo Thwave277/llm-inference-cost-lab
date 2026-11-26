@@ -1,0 +1,35 @@
+{
+  "model": "qwen3-1.7b",
+  "rows": [
+    {
+      "target": 128,
+      "prompt_tokens": 127,
+      "prefill_tok_s": 6263.3
+    },
+    {
+      "target": 512,
+      "prompt_tokens": 466,
+      "prefill_tok_s": 8402.1
+    },
+    {
+      "target": 1024,
+      "prompt_tokens": 913,
+      "prefill_tok_s": 8684
+    },
+    {
+      "target": 2048,
+      "prompt_tokens": 1810,
+      "prefill_tok_s": 9458.7
+    },
+    {
+      "target": 4096,
+      "prompt_tokens": 3603,
+      "prefill_tok_s": 8925.7
+    },
+    {
+      "target": 8192,
+      "prompt_tokens": 7192,
+      "prefill_tok_s": 8124.7
+    }
+  ]
+}

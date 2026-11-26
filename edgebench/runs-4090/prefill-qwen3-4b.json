@@ -1,0 +1,30 @@
+{
+  "model": "qwen3-4b",
+  "rows": [
+    {
+      "target": 128,
+      "prompt_tokens": 126,
+      "prefill_tok_s": 3058.5
+    },
+    {
+      "target": 512,
+      "prompt_tokens": 464,
+      "prefill_tok_s": 3572.8
+    },
+    {
+      "target": 1024,
+      "prompt_tokens": 913,
+      "prefill_tok_s": 3518.3
+    },
+    {
+      "target": 2048,
+      "prompt_tokens": 1811,
+      "prefill_tok_s": 3720.6
+    },
+    {
+      "target": 4096,
+      "prompt_tokens": 3603,
+      "prefill_tok_s": 3474.1
+    }
+  ]
+}

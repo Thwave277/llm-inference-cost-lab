@@ -1,0 +1,271 @@
+{
+  "model": "/root/autodl-tmp/models/Qwen3-4B-AWQ",
+  "n": 32,
+  "ok": 27,
+  "acc": 0.8438,
+  "by_kind": {
+    "math": 1.0,
+    "zh": 0.875,
+    "logic": 0.3333,
+    "code": 1.0
+  },
+  "rows": [
+    {
+      "kind": "math",
+      "q": "What is 17 × 23?",
+      "pick": "391",
+      "gold": "391",
+      "ok": true,
+      "margin": 3.4513
+    },
+    {
+      "kind": "math",
+      "q": "What is 48 × 37?",
+      "pick": "1776",
+      "gold": "1776",
+      "ok": true,
+      "margin": 0.4943
+    },
+    {
+      "kind": "math",
+      "q": "What is 96 × 12?",
+      "pick": "1152",
+      "gold": "1152",
+      "ok": true,
+      "margin": 2.037
+    },
+    {
+      "kind": "math",
+      "q": "What is 123 × 45?",
+      "pick": "5535",
+      "gold": "5535",
+      "ok": true,
+      "margin": 3.5521
+    },
+    {
+      "kind": "math",
+      "q": "What is 7 × 89?",
+      "pick": "623",
+      "gold": "623",
+      "ok": true,
+      "margin": 3.1052
+    },
+    {
+      "kind": "math",
+      "q": "What is 256 × 4?",
+      "pick": "1024",
+      "gold": "1024",
+      "ok": true,
+      "margin": 3.2804
+    },
+    {
+      "kind": "math",
+      "q": "What is 63 × 64?",
+      "pick": "4032",
+      "gold": "4032",
+      "ok": true,
+      "margin": 3.0157
+    },
+    {
+      "kind": "math",
+      "q": "What is 19 × 19?",
+      "pick": "361",
+      "gold": "361",
+      "ok": true,
+      "margin": 4.6822
+    },
+    {
+      "kind": "math",
+      "q": "What is 72 × 25?",
+      "pick": "1800",
+      "gold": "1800",
+      "ok": true,
+      "margin": 3.4808
+    },
+    {
+      "kind": "math",
+      "q": "What is 144 × 12?",
+      "pick": "1728",
+      "gold": "1728",
+      "ok": true,
+      "margin": 3.1236
+    },
+    {
+      "kind": "math",
+      "q": "What is 55 × 55?",
+      "pick": "3025",
+      "gold": "3025",
+      "ok": true,
+      "margin": 2.6969
+    },
+    {
+      "kind": "math",
+      "q": "What is 39 × 41?",
+      "pick": "1599",
+      "gold": "1599",
+      "ok": true,
+      "margin": 3.9536
+    },
+    {
+      "kind": "zh",
+      "q": "中国最长的河流是？",
+      "pick": "长江",
+      "gold": "长江",
+      "ok": true,
+      "margin": 2.4209
+    },
+    {
+      "kind": "zh",
+      "q": "水的化学式是？",
+      "pick": "H2O",
+      "gold": "H2O",
+      "ok": true,
+      "margin": 6.762
+    },
+    {
+      "kind": "zh",
+      "q": "一年有多少个月？",
+      "pick": "12",
+      "gold": "12",
+      "ok": true,
+      "margin": 5.3912
+    },
+    {
+      "kind": "zh",
+      "q": "三角形内角和是多少度？",
+      "pick": "180",
+      "gold": "180",
+      "ok": true,
+      "margin": 3.2533
+    },
+    {
+      "kind": "zh",
+      "q": "光在真空中的速度约为每秒多少公里？",
+      "pick": "3000",
+      "gold": "30万",
+      "ok": false,
+      "margin": 1.7883
+    },
+    {
+      "kind": "zh",
+      "q": "地球上最大的洋是？",
+      "pick": "太平洋",
+      "gold": "太平洋",
+      "ok": true,
+      "margin": 0.4214
+    },
+    {
+      "kind": "zh",
+      "q": "《红楼梦》的作者是？",
+      "pick": "曹雪芹",
+      "gold": "曹雪芹",
+      "ok": true,
+      "margin": 0.132
+    },
+    {
+      "kind": "zh",
+      "q": "中国的首都是？",
+      "pick": "北京",
+      "gold": "北京",
+      "ok": true,
+      "margin": 5.2241
+    },
+    {
+      "kind": "logic",
+      "q": "If all cats are animals and Tom is a cat, Tom is",
+      "pick": "an animal",
+      "gold": "an animal",
+      "ok": true,
+      "margin": 9.985
+    },
+    {
+      "kind": "logic",
+      "q": "Is 91 a prime number?",
+      "pick": "No",
+      "gold": "No",
+      "ok": true,
+      "margin": 5.4485
+    },
+    {
+      "kind": "logic",
+      "q": "Which is larger?",
+      "pick": "3/7",
+      "gold": "4/9",
+      "ok": false,
+      "margin": 0.2034
+    },
+    {
+      "kind": "logic",
+      "q": "If today is Tuesday, ten days later it is",
+      "pick": "Thursday",
+      "gold": "Friday",
+      "ok": false,
+      "margin": 0.2463
+    },
+    {
+      "kind": "logic",
+      "q": "All roses are flowers. Some flowers fade quickly. ",
+      "pick": "must fade quickly",
+      "gold": "may fade quickly",
+      "ok": false,
+      "margin": 0.4914
+    },
+    {
+      "kind": "logic",
+      "q": "5 machines make 5 widgets in 5 minutes. 100 machin",
+      "pick": "100 minutes",
+      "gold": "5 minutes",
+      "ok": false,
+      "margin": 0.4521
+    },
+    {
+      "kind": "code",
+      "q": "What does this print?\nx = [1, 2, 3]\nprint(sum(x))",
+      "pick": "6",
+      "gold": "6",
+      "ok": true,
+      "margin": 1.3326
+    },
+    {
+      "kind": "code",
+      "q": "What does this print?\nprint(len('hello'))",
+      "pick": "5",
+      "gold": "5",
+      "ok": true,
+      "margin": 9.1875
+    },
+    {
+      "kind": "code",
+      "q": "What does this print?\nprint(2 ** 10)",
+      "pick": "1024",
+      "gold": "1024",
+      "ok": true,
+      "margin": 3.5719
+    },
+    {
+      "kind": "code",
+      "q": "What does this print?\na = [3, 1, 2]\nprint(sorted(a",
+      "pick": "1",
+      "gold": "1",
+      "ok": true,
+      "margin": 1.3196
+    },
+    {
+      "kind": "code",
+      "q": "What does this print?\nprint('ab' * 2)",
+      "pick": "abab",
+      "gold": "abab",
+      "ok": true,
+      "margin": 0.3907
+    },
+    {
+      "kind": "code",
+      "q": "What does this print?\nprint(int('7') + 1)",
+      "pick": "8",
+      "gold": "8",
+      "ok": true,
+      "margin": 5.6246
+    }
+  ],
+  "mean_margin": 3.1412
+}

@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# 分发件（走 release，不进仓库）
+*.zip
+
+# Office 临时文件
+~$*.docx
+
+# 系统
+.DS_Store
+Thumbs.db
+
+# 运行产物（除了归档的 runs-4090/，其余不入库）
+edgebench/runs/*.tmp

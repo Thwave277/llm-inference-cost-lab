@@ -1,0 +1,3 @@
+{"batch": 1, "prompt": "copy", "method": "ngram", "ms_token": 7.025, "tok_s": 142.3, "load_s": 30.4}
+{"batch": 4, "prompt": "copy", "method": "ngram", "ms_token": 1.9046, "tok_s": 525.0, "load_s": 30.4}
+{"batch": 8, "prompt": "copy", "method": "ngram", "ms_token": 0.7641, "tok_s": 1308.7, "load_s": 30.4}

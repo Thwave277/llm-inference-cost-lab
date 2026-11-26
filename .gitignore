@@ -15,3 +15,6 @@ Thumbs.db
 
 # 运行产物（除了归档的 runs-4090/，其余不入库）
 edgebench/runs/*.tmp
+
+# edgebench.zip 是 edgebench/ 的旧快照，不入库
+edgebench.zip
